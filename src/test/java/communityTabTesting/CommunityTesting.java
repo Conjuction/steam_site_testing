@@ -16,7 +16,7 @@ public class CommunityTesting extends TestBase {
     @Test
     @Owner("Sukhinin Dmitrii")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("Проверка перехода по ссылкам из выпадающего списка 'Сообщество'")
+    @DisplayName("Проверка перехода по ссылкам из выпадающего списка 'COMMUNITY'")
     void dropdownTesting() {
         step("Навести мышку на кнопку 'COMMUNITY' в верхней части экрана", () ->
                 $("#global_header").$(byText("COMMUNITY")).hover());
