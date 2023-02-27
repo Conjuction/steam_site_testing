@@ -34,7 +34,7 @@ public class GenreTesting extends TestBase {
             String categories,
             String str
     ) {
-        step("В левой чати экрана выбрать жанр: " + categories, () ->
+        step("В левой части экрана выбрать жанр: " + categories, () ->
                 $(".home_page_gutter").$(byText(categories)).click());
         step("В открывшемся окне проверить наличие текста: " + str, () ->
                 $(".responsive").shouldHave(text(str)));
