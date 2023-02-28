@@ -1,4 +1,4 @@
-<h1 >Демопроект автоматизации UI на сайте <a href="https://store.steampowered.com/ ">steam</a></h1>
+<h1 >Демопроект автоматизации UI на сайте <a href="https://store.steampowered.com/ ">Steam</a></h1>
 
 ![Steam_logo.svg.png](images/logo/Steam_logo.svg.png)
 
