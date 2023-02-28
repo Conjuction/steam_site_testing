@@ -1,6 +1,6 @@
 <h1 >Демопроект автоматизации UI на сайте <a href="https://store.steampowered.com/ ">steam</a></h1>
 
-![Steam_logo.png](images/Steam_logo.png)
+![Steam_logo.png](images/steam_logo.png)
 
 ## :bookmark_tabs: Содержание 
 
