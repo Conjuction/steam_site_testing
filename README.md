@@ -45,7 +45,7 @@ gradle clean test
 ### Удаленный запуск тестов
 
 ```
-gradle clean test 
+clean test 
 "-Dbrowser=${BROWSER}" 
 "-DbrowserVersion=${BROWSER_VERSION}" 
 "-DbrowserSize=${BROWSER_SIZE}" 
