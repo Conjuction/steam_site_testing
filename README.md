@@ -61,18 +61,18 @@ clean test
 > `${REMOTE_URL}` - адрес удаленного сервера, на котором будут запускаться тесты.
 
 <a id="jenkins"></a>
-## <img src="images/logo/Jenkins.svg" width="25" height="25"/></a> Запуск тестов в Jenkins
+## <img src="images/logo/jenkins.png" width="25" height="25"/></a> Запуск тестов в Jenkins
 
-<a target="_blank" href="https://jenkins.autotests.cloud/job/AD_steam_project_test/">Сборка в Jenkins</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/Sukhinin_HW_14/#">Сборка в Jenkins</a>
 <p align="center">
 
 > Сборка с параметрами позволяет перед запуском изменить параметры для сборки (путем выбора из списка или прямым указанием значения).
 
-<a href="https://jenkins.autotests.cloud/job/AD_steam_project_test/"><img src="images/screenshots/jenkinsJob.png" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/Sukhinin_HW_14/#"><img src="images/screenshots/jenkinsJob.png" alt="Jenkins"/></a>
 </p>
 
 <a id="allure"></a>
-## <img src="images/logo/Allure.svg" width="25" height="25"/></a> Allure отчеты
+## <img src="images/logo/allure.png" width="25" height="25"/></a> Allure отчеты
 
 ### Основное окно
 
@@ -87,14 +87,14 @@ clean test
 </p>
 
 <a id="telegram"></a>
-## <img src="images/logo/Telegram.svg" width="25" height="25"/></a> Уведомления в Telegram с использованием бота
+## <img src="images/logo/telegram.png" width="25" height="25"/></a> Уведомления в Telegram с использованием бота
 
 <p >
 <img title="telegram bot" src="images/screenshots/telegramBot.png">
 </p>
 
 <a id="video"></a>
-## <img src="images/logo/Selenoid.svg" width="25" height="25"/></a> Пример прогона теста в Selenoid
+## <img src="images/logo/selenoid.png" width="25" height="25"/></a> Пример прогона теста в Selenoid
 
 > К каждому тесту в отчете прилагается видео.
 <p align="center">
