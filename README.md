@@ -96,7 +96,7 @@ clean test
 ### Тест кейсы
 
 <p align="center">
-<img title="Allure_TestOps Overview Dashboard" src="images/screenshots/allure_testops_case.png">
+<img title="Allure TestOps Overview Dashboard" src="images/screenshots/allure_testops_case.png">
 </p>
 
 <a id="telegram"></a>
