@@ -77,20 +77,20 @@ clean test
 ### Основное окно
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screenshots/allureRepMain.png">
+<img title="Allure Overview Dashboard" src="images/screenshots/allureMain.png">
 </p>
 
 ### Тесты
 
 <p align="center">
-<img title="Allure Tests" src="images/screenshots/allureRepTests.png">
+<img title="Allure Tests" src="images/screenshots/exampleTest.png">
 </p>
 
 <a id="telegram"></a>
 ## <img src="images/logo/telegram.png" width="25" height="25"/></a> Уведомления в Telegram с использованием бота
 
 <p >
-<img title="telegram bot" src="images/screenshots/telegramBot.png">
+<img title="telegram bot" src="images/screenshots/telegramAlert.png">
 </p>
 
 <a id="video"></a>
@@ -98,5 +98,5 @@ clean test
 
 > К каждому тесту в отчете прилагается видео.
 <p align="center">
-  <img title="Selenoid Video" src="images/video/addToCartVideo.gif">
+  <img title="Selenoid Video" src="images/video/result.gif">
 </p>
