@@ -16,8 +16,6 @@
 
 * <a href="#allure_testops">Интеграция с Allure TestOps</a>
 
-* <a href="#jira">Интеграция с Jira</a>
-
 * <a href="#telegram">Уведомления в Telegram с использованием бота</a>
 
 * <a href="#video">Пример прогона теста в Selenoid</a>
