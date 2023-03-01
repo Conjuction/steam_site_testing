@@ -68,7 +68,7 @@ clean test
 
 > Сборка с параметрами позволяет перед запуском изменить параметры для сборки (путем выбора из списка или прямым указанием значения).
 
-<a href="https://jenkins.autotests.cloud/job/Sukhinin_HW_14/#"><img src="images/screenshots/jenkinsJob.png" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/Sukhinin_HW_14/#"><img src="images/screenshots/sborkaJenkins.png" alt="Jenkins"/></a>
 </p>
 
 <a id="allure"></a>
