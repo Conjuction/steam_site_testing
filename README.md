@@ -109,5 +109,5 @@ clean test
 
 > К каждому тесту в отчете прилагается видео.
 <p align="center">
-  <img title="Selenoid Video" src="images/video/result.gif">
+  <img title="Selenoid Video" src="images/video/results.gif">
 </p>
