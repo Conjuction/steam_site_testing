@@ -1,4 +1,4 @@
-package localizationTesting;
+package localizationtesting;
 
 public enum Locale {
     UA("Українська (Ukrainian)"),

@@ -1,4 +1,4 @@
-package addingGameCart;
+package addinggamecart;
 
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;

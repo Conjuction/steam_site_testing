@@ -1,4 +1,4 @@
-package genreTesting;
+package genretesting;
 
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
