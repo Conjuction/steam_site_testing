@@ -9,7 +9,6 @@ import helpers.TestBase;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 
 public class CartTesting extends TestBase {
@@ -21,17 +20,17 @@ public class CartTesting extends TestBase {
     @ParameterizedTest(name = "Проверка добавления игры {0} в корзину")
     void testCart(String gameName) {
         step("Ввести в поле поиска " + gameName + " и нажать Enter", () ->
-                $("#store_nav_search_term").setValue(gameName).pressEnter());
+                inputSearch.setValue(gameName).pressEnter());
         step("В выпадающем списке нажать на " + gameName, () ->
-                $("#search_resultsRows").$(byText(gameName)).click());
+                resultSearch.$(byText(gameName)).click());
         step("На открывшейся странице проверить наличие " + gameName + " и нажать кнопку 'В корзину'", () -> {
-            $("#appHubAppName").shouldHave(text(gameName));
-            $(".btn_green_steamui").click();
+            appName.shouldHave(text(gameName));
+            addButton.click();
         });
         step("На открывшейся  странице проверить успешность добваления игры в корзину", () -> {
-            $(".page_content").shouldHave(text("YOUR SHOPPING CART"));
-            $("#btn_purchase_self").shouldHave(text("Purchase for myself"));
-            $("#btn_purchase_gift").shouldHave(text("Purchase as a gift"));
+            pageContent.shouldHave(text("YOUR SHOPPING CART"));
+            purchaseSelf.shouldHave(text("Purchase for myself"));
+            purchaseGift.shouldHave(text("Purchase as a gift"));
         });
     }
 }

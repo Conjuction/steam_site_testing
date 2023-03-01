@@ -8,9 +8,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
-
 
 public class SearchTesting extends TestBase {
     @CsvSource({
@@ -26,8 +24,8 @@ public class SearchTesting extends TestBase {
             String game
     ) {
         step("В окне посика ввести: " + str, () ->
-                $("#store_nav_search_term").setValue(str));
+                inputSearch.setValue(str));
         step("В выпадающем списке проверить наличие: " + game, () ->
-                $("#search_suggestion_contents").shouldHave(text(game)));
+                dropdown.shouldHave(text(game)));
     }
 }

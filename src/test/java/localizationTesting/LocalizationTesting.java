@@ -36,9 +36,9 @@ public class LocalizationTesting extends TestBase {
             List<String> buttons
     ) {
         step("В правой верхней части экрана нажать на кнопку выбора языка", () ->
-                $("#language_pulldown").click());
+                language.click());
         step("В выпадающем списке выбрать " + locale, () ->
-                $("#language_dropdown").$(byText((locale.getDesc()))).click());
+                languageChoice.$(byText((locale.getDesc()))).click());
         step("Проверить перевод кнопок на главной странице: " + buttons, () ->
                 $$(".supernav_container a").filter(visible).shouldHave(texts(buttons)));
     }

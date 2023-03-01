@@ -9,7 +9,6 @@ import helpers.TestBase;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 
 public class GenreTesting extends TestBase {
@@ -35,10 +34,10 @@ public class GenreTesting extends TestBase {
             String str
     ) {
         step("В левой части экрана выбрать жанр: " + categories, () ->
-                $(".home_page_gutter").$(byText(categories)).click());
+                genre.$(byText(categories)).click());
         step("В открывшемся окне проверить наличие текста: " + str, () ->
-                $(".responsive").shouldHave(text(str)));
+                result.shouldHave(text(str)));
         step("Нажать на логотип 'Steam' для перехода на главную страницу", () ->
-                $("#logo_holder").click());
+                logo.click());
     }
 }
