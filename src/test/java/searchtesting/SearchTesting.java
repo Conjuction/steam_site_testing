@@ -14,7 +14,7 @@ public class SearchTesting extends TestBase {
     @CsvSource({
             "Dota, Dota 2",
             "mount, Mount & Blade II: Bannerlord",
-            "dark, Dark and Darker"
+            "dark, Dark Souls"
     })
     @Owner("Sukhinin Dmitrii")
     @Severity(SeverityLevel.CRITICAL)
