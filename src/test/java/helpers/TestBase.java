@@ -15,13 +15,6 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 public class TestBase {
-    public final SelenideElement inputSearch =  $("#store_nav_search_term");
-    public final SelenideElement resultSearch =  $("#search_resultsRows");
-    public final SelenideElement appName =  $("#appHubAppName");
-    public final SelenideElement addButton =  $(".btn_green_steamui");
-    public final SelenideElement pageContent =  $(".page_content");
-    public final SelenideElement purchaseSelf =  $("#btn_purchase_self");
-    public final SelenideElement purchaseGift =  $("#btn_purchase_gift");
 
     @BeforeAll
     static void openPage() {

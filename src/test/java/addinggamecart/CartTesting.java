@@ -6,12 +6,14 @@ import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import helpers.TestBase;
+import pages.AddCartPage;
+import pages.MainPage;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byText;
 import static io.qameta.allure.Allure.step;
 
 public class CartTesting extends TestBase {
+    MainPage mainPage = new MainPage();
+    AddCartPage addCartPage = new AddCartPage();
     @ValueSource(
             strings = {"RimWorld", "Oxygen Not Included", "Mount & Blade II: Bannerlord"}
     )
@@ -20,17 +22,12 @@ public class CartTesting extends TestBase {
     @ParameterizedTest(name = "Проверка добавления игры {0} в корзину")
     void testCart(String gameName) {
         step("Ввести в поле поиска " + gameName + " и нажать Enter", () ->
-                inputSearch.setValue(gameName).pressEnter());
+                mainPage.enterName(gameName));
         step("В выпадающем списке нажать на " + gameName, () ->
-                resultSearch.$(byText(gameName)).click());
-        step("На открывшейся странице проверить наличие " + gameName + " и нажать кнопку 'В корзину'", () -> {
-            appName.shouldHave(text(gameName));
-            addButton.click();
-        });
-        step("На открывшейся  странице проверить успешность добавления игры в корзину", () -> {
-            pageContent.shouldHave(text("YOUR SHOPPING CART"));
-            purchaseSelf.shouldHave(text("Purchase for myself"));
-            purchaseGift.shouldHave(text("Purchase as a gift"));
-        });
+                addCartPage.selectGame(gameName));
+        step("На открывшейся странице проверить наличие " + gameName + " и нажать кнопку 'В корзину'", () ->
+            addCartPage.addingCart(gameName));
+        step("На открывшейся  странице проверить успешность добавления игры в корзину", () ->
+            addCartPage.checkResult());
     }
 }

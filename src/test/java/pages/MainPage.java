@@ -48,4 +48,9 @@ public class MainPage {
         genre.$(byText(categories)).click();
         return this;
     }
+
+    public MainPage enterName(String gameName){
+        inputSearch.setValue(gameName).pressEnter();
+        return this;
+    }
 }
