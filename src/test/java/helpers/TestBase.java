@@ -25,9 +25,6 @@ public class TestBase {
     public final SelenideElement genre =  $(".home_page_gutter");
     public final SelenideElement result =  $(".responsive");
     public final SelenideElement logo =  $("#logo_holder");
-    public final SelenideElement language =  $("#language_pulldown");
-    public final SelenideElement languageChoice =  $("#language_dropdown");
-    public final SelenideElement dropdown =  $("#search_suggestion_contents");
     public final SelenideElement communityButton =  $("#global_header");
     public final SelenideElement communityDropdown =  $(".supernav_content");
     public final SelenideElement headerActivity =  $(".community_home_title");
