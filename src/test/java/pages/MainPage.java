@@ -13,11 +13,12 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class MainPage {
-    private SelenideElement inputSearch =  $("#store_nav_search_term");
-    private SelenideElement dropdown =  $("#search_suggestion_contents");
-    private SelenideElement language =  $("#language_pulldown");
-    private SelenideElement languageChoice =  $("#language_dropdown");
-    private SelenideElement genre =  $(".home_page_gutter");
+    private final SelenideElement inputSearch =  $("#store_nav_search_term");
+    private final SelenideElement dropdown =  $("#search_suggestion_contents");
+    private final SelenideElement language =  $("#language_pulldown");
+    private final SelenideElement languageChoice =  $("#language_dropdown");
+    private final SelenideElement genre =  $(".home_page_gutter");
+
     public MainPage searchBox(String str){
         inputSearch.setValue(str);
         return this;

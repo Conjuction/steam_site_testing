@@ -6,8 +6,8 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
 public class ResultsPage {
-    private SelenideElement result =  $(".responsive");
-    private SelenideElement logo =  $("#logo_holder");
+    private final SelenideElement result =  $(".responsive");
+    private final SelenideElement logo =  $("#logo_holder");
 
     public ResultsPage resultCheck(String str){
         result.shouldHave(text(str));

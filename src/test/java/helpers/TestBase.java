@@ -22,13 +22,6 @@ public class TestBase {
     public final SelenideElement pageContent =  $(".page_content");
     public final SelenideElement purchaseSelf =  $("#btn_purchase_self");
     public final SelenideElement purchaseGift =  $("#btn_purchase_gift");
-    public final SelenideElement communityButton =  $("#global_header");
-    public final SelenideElement communityDropdown =  $(".supernav_content");
-    public final SelenideElement headerActivity =  $(".community_home_title");
-    public final SelenideElement headerDiscussions =  $(".large_title");
-    public final SelenideElement headerWorkshop =  $(".homeTabSpacer");
-    public final SelenideElement headerMarket =  $("#BG_top");
-    public final SelenideElement headerContent =  $(".community_home_subtitle");
 
     @BeforeAll
     static void openPage() {
