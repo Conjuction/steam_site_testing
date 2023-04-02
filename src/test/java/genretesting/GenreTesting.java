@@ -6,12 +6,16 @@ import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import helpers.TestBase;
+import pages.MainPage;
+import pages.ResultsPage;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static io.qameta.allure.Allure.step;
 
 public class GenreTesting extends TestBase {
+    MainPage mainPage = new MainPage();
+    ResultsPage resultsPage = new ResultsPage();
     @CsvSource({
             "Free to Play, FREE TO PLAY GAMES",
             "Early Access, EARLY ACCESS TITLES",
@@ -34,10 +38,10 @@ public class GenreTesting extends TestBase {
             String str
     ) {
         step("В левой части экрана выбрать жанр: " + categories, () ->
-                genre.$(byText(categories)).click());
+                mainPage.choiceGenre(categories));
         step("В открывшемся окне проверить наличие текста: " + str, () ->
-                result.shouldHave(text(str)));
+                resultsPage.resultCheck(str));
         step("Нажать на логотип 'Steam' для перехода на главную страницу", () ->
-                logo.click());
+                resultsPage.clickLogo());
     }
 }

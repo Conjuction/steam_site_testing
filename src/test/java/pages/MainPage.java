@@ -17,7 +17,7 @@ public class MainPage {
     private SelenideElement dropdown =  $("#search_suggestion_contents");
     private SelenideElement language =  $("#language_pulldown");
     private SelenideElement languageChoice =  $("#language_dropdown");
-
+    private SelenideElement genre =  $(".home_page_gutter");
     public MainPage searchBox(String str){
         inputSearch.setValue(str);
         return this;
@@ -40,6 +40,11 @@ public class MainPage {
 
     public MainPage checkButtons(List<String> buttons){
         $$(".supernav_container a").filter(visible).shouldHave(texts(buttons));
+        return this;
+    }
+
+    public MainPage choiceGenre(String categories){
+        genre.$(byText(categories)).click();
         return this;
     }
 }

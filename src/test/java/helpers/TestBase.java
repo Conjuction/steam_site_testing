@@ -22,9 +22,6 @@ public class TestBase {
     public final SelenideElement pageContent =  $(".page_content");
     public final SelenideElement purchaseSelf =  $("#btn_purchase_self");
     public final SelenideElement purchaseGift =  $("#btn_purchase_gift");
-    public final SelenideElement genre =  $(".home_page_gutter");
-    public final SelenideElement result =  $(".responsive");
-    public final SelenideElement logo =  $("#logo_holder");
     public final SelenideElement communityButton =  $("#global_header");
     public final SelenideElement communityDropdown =  $(".supernav_content");
     public final SelenideElement headerActivity =  $(".community_home_title");
