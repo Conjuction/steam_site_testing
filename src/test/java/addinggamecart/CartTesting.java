@@ -27,7 +27,7 @@ public class CartTesting extends TestBase {
             appName.shouldHave(text(gameName));
             addButton.click();
         });
-        step("На открывшейся  странице проверить успешность добваления игры в корзину", () -> {
+        step("На открывшейся  странице проверить успешность добавления игры в корзину", () -> {
             pageContent.shouldHave(text("YOUR SHOPPING CART"));
             purchaseSelf.shouldHave(text("Purchase for myself"));
             purchaseGift.shouldHave(text("Purchase as a gift"));
