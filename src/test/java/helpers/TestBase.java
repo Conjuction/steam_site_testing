@@ -13,7 +13,7 @@ import static io.qameta.allure.Allure.step;
 
 public class TestBase {
 
-    @BeforeAll
+    @BeforeEach
     static void openPage() {
         step("Открыть главную страницу 'Steam'", () ->
                 open("https://store.steampowered.com/"));
