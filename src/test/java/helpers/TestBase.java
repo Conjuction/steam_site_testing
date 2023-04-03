@@ -1,6 +1,7 @@
 package helpers;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
+import config.WebDriver;
 import driver.DriverSettings;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
@@ -20,7 +21,7 @@ public class TestBase {
 
     @BeforeAll
     static void driverConfigure() {
-        DriverSettings.configure();
+        WebDriver.configure();
     }
 
     @BeforeEach
