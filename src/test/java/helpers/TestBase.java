@@ -1,6 +1,5 @@
 package helpers;
 
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import driver.DriverSettings;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -20,7 +19,7 @@ public class TestBase {
     }
 
     @BeforeEach
-    static void config() {
+    void configure() {
         DriverSettings.configure();
     }
 
@@ -39,6 +38,6 @@ public class TestBase {
 
     @AfterEach
     void closeWebDriver() {
-       closeWebDriver();
+        closeWebDriver();
     }
 }
