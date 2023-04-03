@@ -7,13 +7,16 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import pages.MainPage;
+
+import static com.codeborne.selenide.Selenide.open;
+import static io.qameta.allure.Allure.step;
 
 public class TestBase {
-    MainPage mainPage = new MainPage();
 
     @BeforeAll
     static void openPage() {
+        step("Открыть главную страницу 'Steam'", () ->
+                open("https://store.steampowered.com/"));
         DriverSettings.configure();
     }
 
@@ -32,8 +35,7 @@ public class TestBase {
 
     @AfterEach
     void closeWebDriver() {
-        Selenide.closeWindow();
-        Selenide.closeWebDriver();
+        closeWebDriver();
     }
 
 }

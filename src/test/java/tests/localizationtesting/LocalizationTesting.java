@@ -33,7 +33,6 @@ public class LocalizationTesting extends TestBase {
             Locale locale,
             List<String> buttons
     ) {
-        mainPage.openPage();
         step("В правой верхней части экрана нажать на кнопку выбора языка", () ->
                 mainPage.languageButton());
         step("В выпадающем списке выбрать " + locale, () ->

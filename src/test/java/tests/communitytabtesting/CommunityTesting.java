@@ -18,9 +18,7 @@ public class CommunityTesting extends TestBase {
     @DisplayName("Проверка перехода по ссылкам из выпадающего списка 'COMMUNITY'")
     void dropdownTesting() {
         CommunityPage communityPage = new CommunityPage();
-        MainPage mainPage = new MainPage();
 
-        mainPage.openPage();
         step("Навести мышку на кнопку 'COMMUNITY' в верхней части экрана", () ->
                 communityPage.hoverCommunity());
         step("Выбрать из выпадающего списка 'Home'", () ->

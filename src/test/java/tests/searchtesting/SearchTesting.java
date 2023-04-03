@@ -24,7 +24,6 @@ public class SearchTesting extends TestBase {
             String str,
             String game
     ) {
-        mainPage.openPage();
         step("В окне поиска ввести: " + str, () ->
                 mainPage.searchBox(str));
         step("В выпадающем списке проверить наличие: " + game, () ->

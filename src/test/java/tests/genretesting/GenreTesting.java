@@ -35,7 +35,6 @@ public class GenreTesting extends TestBase {
             String categories,
             String str
     ) {
-        mainPage.openPage();
         step("В левой части экрана выбрать жанр: " + categories, () ->
                 mainPage.choiceGenre(categories));
         step("В открывшемся окне проверить наличие текста: " + str, () ->

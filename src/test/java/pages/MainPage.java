@@ -19,13 +19,6 @@ public class MainPage {
     private final SelenideElement languageChoice =  $("#language_dropdown");
     private final SelenideElement genre =  $(".home_page_gutter");
 
-    public MainPage openPage() {
-        step("Открытие главной страницы сайта 'steam'", () -> {
-            open("https://store.steampowered.com/");
-        });
-        return this;
-    }
-
     public MainPage searchBox(String str){
         inputSearch.setValue(str);
         return this;
