@@ -1,4 +1,4 @@
-package communitytabtesting;
+package tests.communitytabtesting;
 
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;

@@ -1,4 +1,4 @@
-package localizationtesting;
+package tests.localizationtesting;
 
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;

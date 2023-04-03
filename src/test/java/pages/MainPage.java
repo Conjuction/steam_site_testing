@@ -1,7 +1,7 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import localizationtesting.Locale;
+import tests.localizationtesting.Locale;
 
 import java.util.List;
 

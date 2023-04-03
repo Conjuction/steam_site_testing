@@ -1,4 +1,4 @@
-package searchtesting;
+package tests.searchtesting;
 
 import helpers.TestBase;
 import io.qameta.allure.Owner;
