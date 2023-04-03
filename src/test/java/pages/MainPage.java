@@ -9,8 +9,8 @@ import static com.codeborne.selenide.CollectionCondition.texts;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
+import static com.codeborne.selenide.Selenide.*;
+import static io.qameta.allure.Allure.step;
 
 public class MainPage {
     private final SelenideElement inputSearch =  $("#store_nav_search_term");
@@ -18,6 +18,13 @@ public class MainPage {
     private final SelenideElement language =  $("#language_pulldown");
     private final SelenideElement languageChoice =  $("#language_dropdown");
     private final SelenideElement genre =  $(".home_page_gutter");
+
+    public MainPage openPage() {
+        step("Открытие главной страницы сайта 'steam'", () -> {
+            open("https://store.steampowered.com/");
+        });
+        return this;
+    }
 
     public MainPage searchBox(String str){
         inputSearch.setValue(str);

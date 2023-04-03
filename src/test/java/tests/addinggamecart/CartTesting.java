@@ -21,6 +21,7 @@ public class CartTesting extends TestBase {
     @Severity(SeverityLevel.BLOCKER)
     @ParameterizedTest(name = "Проверка добавления игры {0} в корзину")
     void testCart(String gameName) {
+        mainPage.openPage();
         step("Ввести в поле поиска " + gameName + " и нажать Enter", () ->
                 mainPage.enterName(gameName));
         step("В выпадающем списке нажать на " + gameName, () ->
