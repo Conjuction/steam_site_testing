@@ -7,10 +7,10 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class DriverSettings {
     public static void configure() {
+        Configuration.baseUrl = WebDriver.config.getBaseUrl();
         Configuration.browser = WebDriver.config.getBrowserName();
         Configuration.browserVersion = WebDriver.config.getBrowserVersion();
         Configuration.browserSize = WebDriver.config.getBrowserSize();
-        Configuration.baseUrl = WebDriver.config.getBaseUrl();
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         ChromeOptions chromeOptions = new ChromeOptions();
