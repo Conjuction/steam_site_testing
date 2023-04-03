@@ -17,6 +17,10 @@ public class TestBase {
     static void openPage() {
         step("Открыть главную страницу 'Steam'", () ->
                 open("https://store.steampowered.com/"));
+    }
+
+    @BeforeAll
+    static void config() {
         DriverSettings.configure();
     }
 
