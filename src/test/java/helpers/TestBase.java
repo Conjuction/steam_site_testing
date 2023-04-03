@@ -36,9 +36,4 @@ public class TestBase {
         Attach.browserConsoleLogs();
         Attach.addVideo();
     }
-
-    @AfterEach
-    void closeDriver() {
-        closeWebDriver();
-    }
 }
