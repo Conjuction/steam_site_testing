@@ -13,13 +13,13 @@ import static io.qameta.allure.Allure.step;
 
 public class TestBase {
 
-    @BeforeEach
+    @BeforeAll
     static void openPage() {
         step("Открыть главную страницу 'Steam'", () ->
                 open("https://store.steampowered.com/"));
     }
 
-    @BeforeAll
+    @BeforeEach
     static void config() {
         DriverSettings.configure();
     }
@@ -39,7 +39,6 @@ public class TestBase {
 
     @AfterEach
     void closeWebDriver() {
-        Selenide.closeWindow();
-        Selenide.closeWebDriver();
+       closeWebDriver();
     }
 }
