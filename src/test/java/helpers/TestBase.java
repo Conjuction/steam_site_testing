@@ -1,5 +1,6 @@
 package helpers;
 
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import driver.DriverSettings;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -27,6 +28,12 @@ public class TestBase {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
+    }
+
+    @AfterEach
+    void closeWebDriver() {
+        Selenide.closeWindow();
+        Selenide.closeWebDriver();
     }
 
 }
