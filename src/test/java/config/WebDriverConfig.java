@@ -3,7 +3,7 @@ package config;
 import org.aeonbits.owner.Config;
 @Config.Sources({"classpath:${env}.properties"})
 
-public interface RemoteWebDriverConfig extends Config {
+public interface WebDriverConfig extends Config {
     @Key("baseUrl")
     String getBaseUrl();
 
