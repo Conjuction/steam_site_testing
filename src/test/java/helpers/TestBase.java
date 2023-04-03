@@ -7,14 +7,11 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 
-import static io.qameta.allure.Allure.step;
-
 public class TestBase {
 
     @BeforeAll
     static void openPage() {
-        step("Открыть главную страницу 'Steam'", () ->
-                DriverSettings.configure());
+        DriverSettings.configure();
     }
 
     @BeforeEach
