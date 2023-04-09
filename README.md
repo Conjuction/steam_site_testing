@@ -53,10 +53,10 @@ gradle clean test -Denv=remote
 <a id="jenkins"></a>
 ## <img src="images/logo/jenkins.png" width="25" height="25"/></a> Запуск тестов в Jenkins
 
-<a target="_blank" href="https://jenkins.autotests.cloud/job/Sukhinin_HW_14/#">Сборка в Jenkins</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/Sukhinin_diplom_final/#">Сборка в Jenkins</a>
 <p align="center">
 
-<a href="https://jenkins.autotests.cloud/job/Sukhinin_HW_14/#"><img src="images/screenshots/sborkaJenkins.png" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/Sukhinin_diplom_final/#"><img src="images/screenshots/sborkaJenkins.png" alt="Jenkins"/></a>
 </p>
 
 <a id="allure"></a>
