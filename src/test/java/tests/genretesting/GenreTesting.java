@@ -1,4 +1,4 @@
-package genretesting;
+package tests.genretesting;
 
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
@@ -9,8 +9,6 @@ import helpers.TestBase;
 import pages.MainPage;
 import pages.ResultsPage;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byText;
 import static io.qameta.allure.Allure.step;
 
 public class GenreTesting extends TestBase {

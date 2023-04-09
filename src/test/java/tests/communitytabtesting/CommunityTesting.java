@@ -1,4 +1,4 @@
-package communitytabtesting;
+package tests.communitytabtesting;
 
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
@@ -7,6 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import helpers.TestBase;
 import pages.CommunityPage;
+import pages.MainPage;
 
 import static io.qameta.allure.Allure.step;
 

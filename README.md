@@ -41,36 +41,22 @@
 ### Локальный запуск тестов
 
 ```
-gradle clean test 
+gradle clean test -Denv=local
 ```
 
-### Удаленный запуск тестов
+### Запуск тестов на удаленном браузере
 
 ```
-clean test 
-"-Dbrowser=${BROWSER}" 
-"-DbrowserVersion=${BROWSER_VERSION}" 
-"-DbrowserSize=${BROWSER_SIZE}" 
-"-DremoteUrl=${REMOTE_URL}"
+gradle clean test -Denv=remote
 ```
-
-> `${BROWSER}` - наименование браузера (_по умолчанию - <code>chrome</code>_).
->
-> `${BROWSER_VERSION}` - версия браузера (_по умолчанию - <code>100.0</code>_).
->
-> `${BROWSER_SIZE}` - размер окна браузера (_по умолчанию - <code>1920x1080</code>_).
->
-> `${REMOTE_URL}` - адрес удаленного сервера, на котором будут запускаться тесты.
 
 <a id="jenkins"></a>
 ## <img src="images/logo/jenkins.png" width="25" height="25"/></a> Запуск тестов в Jenkins
 
-<a target="_blank" href="https://jenkins.autotests.cloud/job/Sukhinin_HW_14/#">Сборка в Jenkins</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/Sukhinin_diplom_final/#">Сборка в Jenkins</a>
 <p align="center">
 
-> Сборка с параметрами позволяет перед запуском изменить параметры для сборки (путем выбора из списка или прямым указанием значения).
-
-<a href="https://jenkins.autotests.cloud/job/Sukhinin_HW_14/#"><img src="images/screenshots/sborkaJenkins.png" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/Sukhinin_diplom_final/#"><img src="images/screenshots/sborkaJenkins.png" alt="Jenkins"/></a>
 </p>
 
 <a id="allure"></a>
