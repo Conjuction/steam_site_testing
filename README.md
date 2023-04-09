@@ -56,8 +56,6 @@ gradle clean test -Denv=remote
 <a target="_blank" href="https://jenkins.autotests.cloud/job/Sukhinin_HW_14/#">Сборка в Jenkins</a>
 <p align="center">
 
-> Сборка с параметрами позволяет перед запуском изменить параметры для сборки (путем выбора из списка или прямым указанием значения).
-
 <a href="https://jenkins.autotests.cloud/job/Sukhinin_HW_14/#"><img src="images/screenshots/sborkaJenkins.png" alt="Jenkins"/></a>
 </p>
 
