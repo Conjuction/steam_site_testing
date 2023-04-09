@@ -41,26 +41,14 @@
 ### Локальный запуск тестов
 
 ```
-gradle clean test 
+gradle clean test -Denv=local
 ```
 
-### Удаленный запуск тестов
+### Запуск тестов на удаленном браузере
 
 ```
-clean test 
-"-Dbrowser=${BROWSER}" 
-"-DbrowserVersion=${BROWSER_VERSION}" 
-"-DbrowserSize=${BROWSER_SIZE}" 
-"-DremoteUrl=${REMOTE_URL}"
+gradle clean test -Denv=remote
 ```
-
-> `${BROWSER}` - наименование браузера (_по умолчанию - <code>chrome</code>_).
->
-> `${BROWSER_VERSION}` - версия браузера (_по умолчанию - <code>100.0</code>_).
->
-> `${BROWSER_SIZE}` - размер окна браузера (_по умолчанию - <code>1920x1080</code>_).
->
-> `${REMOTE_URL}` - адрес удаленного сервера, на котором будут запускаться тесты.
 
 <a id="jenkins"></a>
 ## <img src="images/logo/jenkins.png" width="25" height="25"/></a> Запуск тестов в Jenkins
