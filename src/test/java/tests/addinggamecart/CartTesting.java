@@ -14,6 +14,7 @@ import static io.qameta.allure.Allure.step;
 public class CartTesting extends TestBase {
     MainPage mainPage = new MainPage();
     AddCartPage addCartPage = new AddCartPage();
+
     @ValueSource(
             strings = {"RimWorld", "Oxygen Not Included", "Mount & Blade II: Bannerlord"}
     )
@@ -26,8 +27,8 @@ public class CartTesting extends TestBase {
         step("В выпадающем списке нажать на " + gameName, () ->
                 addCartPage.selectGame(gameName));
         step("На открывшейся странице проверить наличие " + gameName + " и нажать кнопку 'В корзину'", () ->
-            addCartPage.addingCart(gameName));
+                addCartPage.addingCart(gameName));
         step("На открывшейся  странице проверить успешность добавления игры в корзину", () ->
-            addCartPage.checkResult());
+                addCartPage.checkResult());
     }
 }
